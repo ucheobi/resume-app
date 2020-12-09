@@ -1,0 +1,28 @@
+.user {
+    color: #ffffff;
+    font-family: "Trebuchet MS", Helvetica, Verdana, 'Geneva', "Times New Roman", monospace;
+    line-height: 180%;
+    padding: 30px ;
+    width: 100%;
+    
+
+    h3 {
+        margin-bottom: 5px;
+    }
+
+    input {
+        padding: 6px;
+        height: 10px;
+        margin-bottom: 10px;
+        width: 80%;
+
+        input[type=text]{
+            border: 1px solid rgb(217, 222, 223);
+        }
+    }
+
+    .login {
+        margin: 10px auto;
+        
+    }
+}
