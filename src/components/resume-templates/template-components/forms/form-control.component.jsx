@@ -10,3 +10,5 @@ const FormControl = () => (
         </ul>
     </div>
 )
+
+export default FormControl;

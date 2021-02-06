@@ -2,7 +2,7 @@ import React from 'react';
 
 import './sign-in.styles.scss';
 
-const SignIn = ( {showModal, children} ) => (
+const SignIn = ( { children} ) => (
     <div className='sign-in'>
         {children}
     </div>

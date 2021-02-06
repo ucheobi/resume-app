@@ -4,11 +4,18 @@ import PersonalDetails from './personal-details/personal-details.component';
 import WorkExperience from './work-experience/work-experience.component';
 import Education from './education/education.component';
 import CoreSkills from './core-skills/core-skills.component';
+import Objectives from './objectives/objectives.component';
+import Languages from './languages/languages.component';
+import Summary from './summary/summary.component';
+import References from './references/references.component';
+import Interest from './interest/interest.component';
+import AdditionalInfo from './forms/bulletpoints-list/bullet-list.component';
+
 
 import './template-form.styles.scss';
 
 
-class TemplateForm extends React.Component {
+class TemplateForm extends Component {
     constructor(){
         super()
         this.state = {
@@ -52,6 +59,18 @@ class TemplateForm extends React.Component {
                         <WorkExperience />
                         <hr />
                         <CoreSkills />
+                        <hr />
+                        <Interest />
+                        <hr />
+                        <Objectives />
+                        <hr />
+                        <Summary />
+                        <hr />
+                        <Languages />
+                        <hr />
+                        <AdditionalInfo />
+                        <hr />
+                        <References />
                     </div>         
                 </form>
             </div>

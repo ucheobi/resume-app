@@ -8,6 +8,7 @@ import Modal from '../profile/modal/modal.component';
 import TemplateForm from './template-components/template-form.component';
 
 import './templates.styles.scss';
+import BasicTemplate from './basic/basic-template-form';
 
 class Template extends React.Component {
     constructor(){
@@ -18,7 +19,7 @@ class Template extends React.Component {
             password: '',
             repeat_password: '',
             forget_password: '',
-            show: true
+            show: false
         }
     }
 
@@ -39,9 +40,9 @@ class Template extends React.Component {
                 <div className='template'>
                     <h2>Choose Your Template</h2>
                     <div className='template-item'> 
-                            <Basic />
-                            <Tabular />
-                            <Professional />
+                            <BasicTemplate showModal={this.showModal} />
+                            <Tabular showModal={this.showModal}/>
+                            <Professional showModal={this.showModal}/>
                     </div>               
                 </div>
 

@@ -43,7 +43,7 @@ class Header extends Component {
                         <li>Resume</li>
                         <li>Blogs</li>
                         <li>
-                            <SignIn showModal={this.showModal} >
+                            <SignIn>
                                 {Login}
                             </SignIn>
                         </li>

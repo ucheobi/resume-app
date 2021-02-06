@@ -13,6 +13,7 @@ const MainItem = props => {
                     <div className='main-item'>
                             
                     <label for='education'>Education</label>
+
                         <input 
                             type='text' 
                             className='certificate'
@@ -21,7 +22,9 @@ const MainItem = props => {
                             value={item.certificate}
                             onChange={e => props.handleChange(e, index)}
                         />
+
                         <label for='education'>Education</label>
+
                         <input 
                             type='text'
                             className='school' 
@@ -30,6 +33,7 @@ const MainItem = props => {
                             value={item.school}
                             onChange={e => props.handleChange(e, index)}
                         />
+
                         <input 
                             type='date'
                             className='date-start' 
@@ -37,6 +41,7 @@ const MainItem = props => {
                             value={item.startDate}
                             onChange={e => props.handleChange(e, index)}
                         />
+
                         <input 
                             type='date'
                             className='date-end' 
@@ -53,6 +58,7 @@ const MainItem = props => {
                                 >
                                     Add
                                 </button>
+                                
                                 <button 
                                     className="remove"
                                     onClick={() => props.handleRemove(index)}

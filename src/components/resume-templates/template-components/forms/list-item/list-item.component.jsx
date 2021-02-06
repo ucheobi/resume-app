@@ -1,13 +1,14 @@
 import React from 'react';
 
+import AddRemoveBtn from '../../../template-button/add-remove-button/add-remove-btn.component';
+
 import './list-item.styles.scss';
 
 const ListItem = props => {
 
     return (
        
-        <div className='list-container'>
-        
+        <div className='list-container'>        
         {props.listItem.map((item, index) => {
             return(
                 <div className='list-item'>
@@ -20,22 +21,10 @@ const ListItem = props => {
                         onChange={e => props.handleChange(e, index)}
                     />
                    
-
-                    <div className='remove-btn'>
-
-                            <button
-                                className='add'
-                                onClick={props.handleAdd}
-                            >
-                                Add
-                            </button>
-                            <button 
-                                className="remove"
-                                onClick={() => props.handleRemove(index)}
-                            >
-                                Remove
-                            </button>
-                    </div>
+                    <AddRemoveBtn 
+                        handleAdd={props.handleAdd} 
+                        handleRemove={props.eRemove} 
+                    />
                 </div>
             )
     })}
@@ -43,7 +32,5 @@ const ListItem = props => {
         </div>
     )  
 }
-
-
 
 export default ListItem;

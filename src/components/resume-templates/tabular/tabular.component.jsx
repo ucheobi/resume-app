@@ -1,10 +1,13 @@
 import React from 'react';
+import TemplateButton from '../template-button/template-button.component';
 
 import './tabular.styles.scss';
 
-const Tabular = () => (
-    <div className='tabular'>
-        <span className='template-list'>Tabular Template</span>
+const Tabular = ({ showModal }) => (
+    <div className='tabular-template'>
+        <TemplateButton showModal={showModal}>
+            Tabular Template
+        </TemplateButton>
     </div>
 )
 

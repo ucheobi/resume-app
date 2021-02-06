@@ -26,6 +26,17 @@ const PersonalDetails = () => (
                 <input type="text" placeholder="Phone Number" name="phone" id="phone" /> 
             </div>
 
+            <div className='age'>
+                <label for='age'><b>Age</b></label>
+                <input 
+                    type='date'
+                    className='age' 
+                    name='Age'
+                    value=''
+                    
+                />
+            </div>
+
             <div className='contact'>
                 <label for="contact"><b>Contact Address</b></label>
                 <input type="text" placeholder="Contact Address" name="contact" id="contact" /> 
@@ -34,7 +45,8 @@ const PersonalDetails = () => (
             <div className='email'>
                 <label for="email"><b>Email Address</b></label>
                 <input type="text" placeholder="Email Address" name="email" id="email" /> 
-            </div>       
+            </div> 
+
         </div>
     </div>
 )
