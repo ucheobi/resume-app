@@ -7,14 +7,16 @@ import './bullet-list.styles.scss';
 const BulletList = props => (
     <div className='bullets'>
         <h2>Items</h2>
+        
         <div className='list-item'>
             <ul className='list'>
                 <li>{props.list}</li>
             </ul>
         </div>
+
         <AddRemoveBtn 
             handleAdd={props.handleAdd} 
-            handleRemove={props.eRemove} 
+            handleRemove={props.handleRemove}
         />
     </div>
 )

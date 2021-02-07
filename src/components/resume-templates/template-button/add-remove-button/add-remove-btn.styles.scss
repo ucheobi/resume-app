@@ -1,0 +1,21 @@
+.add-remove-btn {
+    left: 30%;
+    position: relative;
+    margin: 25px ;
+
+    button {
+        width: 75px;
+        height: 30px;
+        margin-right: 5px;
+        border: none;
+        border-radius: 5%;
+        color: #ffffff;
+        background-color: rgb(2, 74, 77);
+
+        &:hover {
+            cursor: pointer;
+        }
+    }
+
+    
+}

@@ -2,8 +2,8 @@ import React from 'react';
 
 import './add-remove-btn.styles.scss';
 
-const AddRemoveBtn = ({ handleAdd, handleRemove }) => (
-    <div className='remove-btn'>
+const AddRemoveBtn = ({ index, handleAdd, handleRemove }) => (
+    <div className='add-remove-btn'>
         <button
             className='add'
             onClick={handleAdd}
@@ -12,7 +12,7 @@ const AddRemoveBtn = ({ handleAdd, handleRemove }) => (
         </button>
         <button 
             className="remove"
-            onClick={() => handleRemove()}
+            onClick={() => handleRemove(index)}
         >
             Remove
         </button>

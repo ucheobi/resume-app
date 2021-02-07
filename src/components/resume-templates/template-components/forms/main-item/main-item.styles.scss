@@ -1,0 +1,31 @@
+.main-item {
+    
+
+    label {
+        font-weight: bold;
+    }
+
+    .study, .uni {
+
+        input {
+            margin: 10px;
+            width: 75%;
+            height: 25px;
+        }
+    }
+
+    .duration {
+        display: flex;
+
+        .year-start, .year-end {
+
+            input {
+                width: 50%;
+                height: 25px;
+            }
+        }
+        
+    }
+
+    
+}

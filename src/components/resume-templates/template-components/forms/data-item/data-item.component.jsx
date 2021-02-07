@@ -4,11 +4,12 @@ import MainItem from '../main-item/main-item.component';
 import './data-item.styles.scss';
 
 
-const DataItem = () => {
+const DataItem = props => {
 
     const [inputList, setInputList ] = useState([{ 
-        certificate: '',
+        course: '',
         school: '',
+        type: "",
         startDate: new Date().toLocaleString(),
         endDate: new Date().toLocaleString()
     }])
@@ -31,8 +32,10 @@ const DataItem = () => {
         setInputList([
             ...inputList, 
             { 
-                certificate: "", 
+                course: "", 
                 school: "", 
+                study: "",
+                university: "",
                 startDate: new Date().toLocaleString(), 
                 endDate: new Date().toLocaleString() 
             }
@@ -48,6 +51,8 @@ const DataItem = () => {
                     handleAdd={handleAdd} 
                     handleRemove={handleRemove}
                     inputList={inputList} 
+                    study={props.study}
+                    university={props.university}
                 />
             </div>
         </div>
