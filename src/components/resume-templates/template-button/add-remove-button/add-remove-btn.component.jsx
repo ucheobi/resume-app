@@ -12,7 +12,7 @@ const AddRemoveBtn = ({ handleAdd, handleRemove }) => (
         </button>
         <button 
             className="remove"
-            onClick={() => handleRemove(index)}
+            onClick={() => handleRemove()}
         >
             Remove
         </button>

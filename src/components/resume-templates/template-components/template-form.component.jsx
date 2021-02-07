@@ -49,13 +49,12 @@ class TemplateForm extends Component {
      
         return (
             <div className='template-form'>
-                <h2 className='template'>Resume Form</h2>
+                <h1 className='template-header'>Resume Form</h1>
+                
                 <form className='resume-form' onSubmit={this.handleSubmit}>
                     <div className='personal'>
                         <PersonalDetails />
-                        <hr />
-                        <Education />
-                        <hr />
+                        <Education /> 
                         <WorkExperience />
                         <hr />
                         <CoreSkills />

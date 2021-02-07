@@ -6,8 +6,10 @@ import './education.styles.scss';
 
 const Education = () => (
     <div className='education'>
-        <h2>Education</h2>
-        <DataItem />
+        <fieldset>
+            <legend><h3>Education</h3></legend>
+            <DataItem />
+        </fieldset>     
     </div>
 )
 
