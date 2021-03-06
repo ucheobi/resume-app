@@ -1,3 +1,11 @@
+.login {
+    position: relative;
+    border: none;
+    width: 100%;
+    right: 30px;
+    top: 10px;
+}
+
 .header {
     display: flex;
     width: 100%;
@@ -13,6 +21,7 @@
         }
     }
 
+    
     .menu {
       
         height: 0;

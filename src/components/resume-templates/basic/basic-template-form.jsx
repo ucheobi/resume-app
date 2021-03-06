@@ -1,7 +1,6 @@
 import React from 'react';
 import TemplateButton from '../template-button/template-button.component';
 
-
 import './basic.styles.scss';
 
 const BasicTemplate = ({ showModal }) => (

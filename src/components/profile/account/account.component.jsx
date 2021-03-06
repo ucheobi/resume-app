@@ -1,17 +1,22 @@
-import React, { Component } from 'react';
+import React, { useState } from 'react';
+import Register from '../signup/signup.component';
+import Signin from '../signin/signin.component';
+import { useHistory, Redirect } from 'react-router-dom';
+import { signup, signin } from '../../../auth/privacy';
 
-import Register from '../register/register.component';
-import User from '../user/user.component';
-import CloseButton from '../button/close-button.component';
 
 import './account.styles.scss';
 
-const Account = (props) => {
-    //const { showModal, handleSubmit } = props;
-    
+const Account = ({handleClose}) => {
+
     return(
         <div className='account'>
-            <User />
+
+            <div className='close'>
+                <button type='button' onClick={handleClose}>close</button>
+            </div>
+        
+            <Signin />
             <Register />
         </div>
     )

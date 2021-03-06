@@ -9,7 +9,7 @@ import Languages from './languages/languages.component';
 import Summary from './summary/summary.component';
 import References from './references/references.component';
 import Interest from './interest/interest.component';
-import AdditionalInfo from './forms/bulletpoints-list/bullet-list.component';
+import AdditionalInfo from '../template-components/additional-info/additional-info.component';
 
 
 import './template-form.styles.scss';
@@ -55,20 +55,13 @@ class TemplateForm extends Component {
                     <div className='personal'>
                         <PersonalDetails />
                         <Education /> 
-                        <WorkExperience />
-                        <hr />
-                        <CoreSkills />
-                        <hr />
-                        <Interest />
-                        <hr />
-                        <Objectives />
-                        <hr />
-                        <Summary />
-                        <hr />
-                        <Languages />
-                        <hr />
-                        <AdditionalInfo />
-                        <hr />
+                        <WorkExperience />                        
+                        <CoreSkills />                      
+                        <Interest />                      
+                        <Objectives />                       
+                        <Summary />                       
+                        <Languages />                      
+                        <AdditionalInfo />                      
                         <References />
                     </div>         
                 </form>

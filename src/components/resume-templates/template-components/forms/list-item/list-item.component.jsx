@@ -23,7 +23,7 @@ const ListItem = props => {
                    
                     <AddRemoveBtn 
                         handleAdd={props.handleAdd} 
-                        handleRemove={props.eRemove} 
+                        handleRemove={props.handleRemove} 
                     />
                 </div>
             )

@@ -7,11 +7,11 @@ import './work-experience.styles.scss';
 
 const WorkExperience = () => (
     <div className='work-experience'>
-    <fieldset>
-        <legend><h3>Work Experience</h3></legend>
+        <fieldset>
+            <legend><h3>Work Experience</h3></legend>
 
-        <DataItem study="Company" university="Place" />
-    </fieldset>  
+            <DataItem study="Company" university="Place" />
+        </fieldset>  
         
     </div>  
 )

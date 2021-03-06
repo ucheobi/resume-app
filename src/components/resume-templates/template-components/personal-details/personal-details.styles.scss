@@ -1,6 +1,5 @@
 .details {
-    padding: 10px;
-
+    padding: 10px; 
     
      
      h3 span { 
@@ -8,20 +7,28 @@
          padding:0 10px; 
      }
     
-    .name-details {
-       
-        .names {
-            
-            .align{
-                margin-right: 5px;          
-            }
+    .name-details {  
+        
+        
+        .align {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-bottom: 10px;       
         }
 
         input{  
             width: 25%;
-            margin: 10px;
-            height: 25px;
-            align-content: center;
+            margin: 5px 40px 0 5px;
+            height: 25px;    
+        }
+
+        .nationality {
+            select {
+                margin: 10px;
+                width: 25%;
+                height: 30px
+            }
         }
     }
 
@@ -29,7 +36,7 @@
 
         input {
             margin: 10px;
-            width: 75%;
+            width: 55%;
             height: 25px
         }
     }

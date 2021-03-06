@@ -1,23 +1,16 @@
 import React from 'react';
 
-import AddRemoveBtn from '../../../template-button/add-remove-button/add-remove-btn.component';
+import DataList from '../data-list/data-list.component';
 
 import './bullet-list.styles.scss';
 
 const BulletList = props => (
     <div className='bullets'>
-        <h2>Items</h2>
-        
         <div className='list-item'>
             <ul className='list'>
-                <li>{props.list}</li>
+                <li><DataList /></li>
             </ul>
         </div>
-
-        <AddRemoveBtn 
-            handleAdd={props.handleAdd} 
-            handleRemove={props.handleRemove}
-        />
     </div>
 )
 

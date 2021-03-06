@@ -4,11 +4,14 @@ import './objectives.styles.scss';
 
 const Objectives = ({item, handleChange }) => (
     <div className='objectives'>
-    <fieldset>
-        <legend><h3>OBJECTIVE</h3></legend>
-        <textarea onChange={handleChange} name='objective'>Objectives</textarea>
-    </fieldset>
     
+        <h3>OBJECTIVE</h3>
+        <textarea 
+            onChange={handleChange} 
+            rows="8"
+            cols="100"
+            name='objective'>       
+        </textarea>
                      
     </div>
        

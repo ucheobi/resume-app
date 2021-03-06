@@ -1,13 +1,14 @@
 import React from 'react';
 import BulletList from '../forms/bulletpoints-list/bullet-list.component';
-import AdditionalInfo from '../forms/bulletpoints-list/bullet-list.component';
 
 import './additional-info.styles.scss';
 
-const AdditionalInfo = (props) => (
+const AdditionalInfo = () => (
     <div className='info'>
-        <h2>Additional Info here</h2>
-        <BulletList item={props.item} />
+        <fieldset>
+            <legend><h3>Additional Info</h3></legend>
+            <BulletList />
+        </fieldset>
     </div>
 )
 

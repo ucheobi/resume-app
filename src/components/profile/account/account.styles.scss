@@ -4,4 +4,15 @@
     padding: 15px 5px;
     justify-content: center;
     background-color: rgba(3, 34, 31, 0.884);
+
+
+    .close{
+        button {
+            position: relative;
+            right: 0px;
+            top: -5px;
+        }
+    }
+    
 }
+

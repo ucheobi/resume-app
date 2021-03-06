@@ -1,0 +1,29 @@
+.references {
+
+   padding: 10px; 
+
+    .details {
+        input {
+            margin: 10px;
+            width: 75%;
+            height: 25px;
+        }
+    }
+
+    .position, .phone {
+        input {
+            margin: 0 30px 0 10px;
+            width: 30%;
+            height: 25px;
+        }
+    }
+
+     .phone {
+        input {
+            margin: 15px 30px 0 10px;
+            width: 30%;
+            height: 25px;
+        }
+    }
+  
+}

@@ -20,7 +20,7 @@ const PersonalDetails = () => (
                 <br /><label for="middle"><b>Middle Name</b></label>
                 <input type="text" placeholder="Middle Name" name="middle" id="middle" />
                 
-                <label for="phone" className='align'><b>Phone Number</b></label>
+                <label for="phone" className='align'><b>Phone No.</b></label>
                 <input type="number" placeholder="Phone Number" name="phone" id="phone" /> 
             </div>
 
@@ -29,8 +29,7 @@ const PersonalDetails = () => (
                 <input 
                     type='date'
                     className='age' 
-                    name='Age'
-                                
+                    name='Age'                
                 />
            
                 <label for="email"><b>Email Address</b></label>

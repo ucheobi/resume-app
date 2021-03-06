@@ -1,57 +1,52 @@
-import React from 'react';
+import React, { useState} from 'react';
 
-import Basic from '../resume-templates/basic/basic.component';
 import Tabular from '../resume-templates/tabular/tabular.component';
 import Professional from '../resume-templates/professional/professional.component';
-import Advance from '../resume-templates/advance/advance.component';
 import Modal from '../profile/modal/modal.component';
-import TemplateForm from './template-components/template-form.component';
-
+import Account from '../profile/account/account.component';
 import './templates.styles.scss';
 import BasicTemplate from './basic/basic-template-form';
+import {  useHistory } from "react-router-dom";
 
-class Template extends React.Component {
-    constructor(){
-        super()
-        this.state = { 
-            username: '',    
-            email: '',
-            password: '',
-            repeat_password: '',
-            forget_password: '',
-            show: false
-        }
+
+const Template = (props) => {
+  
+    const history = useHistory();
+    const [modal, setModal] = useState(false);
+    const [isLoggedIn, setisLoggedIn] = useState(true); 
+    
+    const setChange = () => {
+        setModal(!modal)
     }
 
-    showModal = () => {
-        this.setState({ show: true })
-    }
+    const handleRoute = () => history.push('/resume/create')
 
-    hideModal = () => {
-        this.setState({ show: false })
-    }
-
-    render(){
-
-        const button = <button onClick></button>
-        return(
-            <div>
-
-                <div className='template'>
-                    <h2>Choose Your Template</h2>
-                    <div className='template-item'> 
-                            <BasicTemplate showModal={this.showModal} />
-                            <Tabular showModal={this.showModal}/>
-                            <Professional showModal={this.showModal}/>
-                    </div>               
-                </div>
-
-                <Modal show={this.state.show} handleClose={this.hideModal}>
-                    <TemplateForm />
-                </Modal>
-        </div>
+    const showModal = () => (
+        isLoggedIn ? (
+            handleRoute()     
+        ) : (
+            setChange()
         )
-    }
+    )
+
+    const hideModal = () => (
+        setChange()
+    )
+     
+    return(   
+            <div className='template'>
+                <h2>Choose Your Template</h2>
+                <div className='template-item'> 
+                    <BasicTemplate showModal={showModal} />
+                    <Tabular showModal={showModal}/>
+                    <Professional showModal={showModal}/>
+                </div>  
+
+                <Modal show={modal} handleClose={hideModal}>
+                    <Account />
+                </Modal> 
+            </div>    
+        )
 }
 
 export default Template;
