@@ -1,0 +1,22 @@
+.resume-data {
+    margin: auto;
+    padding: 8px;
+    width: 80%;
+
+    .data-section {
+        width: 66%;
+        float: left;
+        border: solid 1px rgb(245, 233, 233);
+        padding: 10px;
+    }
+
+    .side-section {
+        width: 30%;
+        margin: auto;
+        padding: 5px;
+        float: right;
+        border: solid 1px rgb(245, 233, 233);
+        
+    }
+    
+}

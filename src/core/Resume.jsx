@@ -1,15 +1,18 @@
 import React from 'react';
-import TemplateForm from '../components/resume-templates/template-components/template-form.component';
+import ResumeData from './collections/basic/resume-data';
 import Layout from './Layout';
 
-
-const Resume = () => {
-    
+const Resume = (props) => {
+   
     return (
-        <Layout className='resume' title='Resume Page'>
-            <TemplateForm />
-        </Layout>
+        <div className='profile'>
+            <Layout>
+                <ResumeData />      
+            </Layout>
+        </div>
     )
+
 }
+
 
 export default Resume;

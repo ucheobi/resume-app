@@ -52,7 +52,7 @@ class TemplateForm extends Component {
                 <h1 className='template-header'>Resume Form</h1>
                 
                 <form className='resume-form' onSubmit={this.handleSubmit}>
-                    <div className='personal'>
+                    <div className='resume-details'>
                         <PersonalDetails />
                         <Education /> 
                         <WorkExperience />                        

@@ -1,0 +1,13 @@
+.placement {
+
+    
+    .course-year {
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+
+        .course {
+            font-weight: bold;
+        }
+    }
+}

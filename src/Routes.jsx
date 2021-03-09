@@ -2,8 +2,9 @@ import React from 'react';
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import PrivateRoute from './auth/PrivateRoute';
 import Home from './core/Home';
-import Profile from './core/Profile';
 import Resume from './core/Resume';
+import ResumeForm from './core/ResumeForm';
+//import Print from './core/Print';
 
 const Routes = () => {
     return (
@@ -12,10 +13,10 @@ const Routes = () => {
                 <Route path="/" exact component={Home} />
 
                 <PrivateRoute
-                    path='/resume/create' exact component={Resume}
+                    path='/resume/create' exact component={ResumeForm}
                 />
                 <PrivateRoute
-                    path='/resume' exact component={Profile}
+                    path='/resume' exact component={Resume}
                 />
             </Switch>
         </BrowserRouter>

@@ -1,0 +1,17 @@
+.work-xp {
+
+
+    .work-list {
+
+
+        .place-year {
+            display: flex;
+            flex-direction: row;
+            justify-content: space-between;
+
+            .place {
+                font-weight: bold;
+            }
+        }
+    }
+}

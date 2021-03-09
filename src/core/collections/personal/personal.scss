@@ -1,0 +1,17 @@
+.personal { 
+   display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    background-color: black;
+    color: #fff;
+    padding: 8px;
+       
+
+    .res-name {
+        font-size: 26px;
+        font-weight: bolder;
+        padding: 25px 5px 10px 5px;
+    }
+
+    
+}

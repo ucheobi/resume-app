@@ -10,7 +10,7 @@ import { isAuthenticated } from '../../auth/privacy';
 import UserProfile from '../profile/user-profile/user-profile.component';
 
 
-const Header = () => {
+const Header = ({data}) => {
 
     const [show, setShow] = useState(false);
     
@@ -27,7 +27,7 @@ const Header = () => {
     let Login = <button className='login' onClick={showModal}>Register/Login</button>;
 
     let showLogin = () => {
-        isAuthenticated() ? history.push('/resume') : showModal()
+        isAuthenticated() ? history.push(`/resume`) : showModal()
     } 
 
 
