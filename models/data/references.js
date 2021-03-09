@@ -12,9 +12,9 @@ const referenceSchema = mongoose.Schema(
             type: String,
         },
         email: {
-            type: string,
+            type: String,
         },
-        phone_no: {
+        phone: {
             Number
         }
     }

@@ -2,7 +2,7 @@ const mongoose = require('mongoose');
 
 const interestSchema = mongoose.Schema(
     {
-        skills: {
+        interest: {
             type: String,
         },
       

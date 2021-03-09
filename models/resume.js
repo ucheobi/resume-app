@@ -1,33 +1,26 @@
 const mongoose = require('mongoose');
-const education = require('./data/education');
-const work = require('./data/work');
-const interest = require('./data/interest');
-const skills = require('./data/skills');
-const language = require('./data/language');
-const info = require('./data/info');
-const references = require('./data/references');
 
-const dataSchema = new mongoose.Schema(
+const resumeSchema = new mongoose.Schema(
     {
-        first_name: {
+        first: {
             type: String,
             trim: true,
             required: true,
             maxlength: 32
         },
-        middle_name: {
+        middle: {
             type: String,
             trim: true,
             required: false,
             maxlength: 32
         },
-        last_name: {
+        last: {
             type: String,
             trim: true,
             required: true,
             maxlength: 32
         },
-        phone_number: {
+        phone: {
             type: Number,
             trim: true,
             required: false,
@@ -40,9 +33,7 @@ const dataSchema = new mongoose.Schema(
             unique: true
         },
         age: { 
-            type: Number, 
-            min: 16, 
-            max: 65 
+            type: String
         },
         nationality: {
             type: String,
@@ -54,13 +45,6 @@ const dataSchema = new mongoose.Schema(
             required: false,
             maxlength: 100
         },
-        education: [education],
-        work: [work],
-        language: [language],
-        info : [info],
-        interest: [interest],
-        skills: [skills],
-        references: [references],
         objective: {
             type: String
         },
@@ -71,4 +55,4 @@ const dataSchema = new mongoose.Schema(
     
 );
 
-module.exports = mongoose.model("Data", dataSchema);
+module.exports = mongoose.model("Resume", resumeSchema);

@@ -4,7 +4,7 @@ const infoSchema = mongoose.Schema(
     {
         info: {
             type: String,
-        },
+        }
       
     }
 )
